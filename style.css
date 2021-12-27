@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+* {
+  margin: 0;
+  font-family: Open Sans, Arial;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  overflow: hidden;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: block;
+  background-color: #333333;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: "ubuntu";
+  font-size: 5em;
+}
+
+h2 {
+  display: block;
+  background-color: #333333;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: "ubuntu";
+  font-size: 3em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px;
+}
+header .session {
+  font-size: 0.8em;
+  display: flex;
+}
+header .session .breakCtrl,
+header .session .sessionCtrl {
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header .session .minus,
+header .session .plus {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2em;
+  outline: none;
+}
+header .session .time {
+  font-size: 2.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+section {
+  background-color: #333333;
+  height: auto;
+  color: #fff;
+}
+section .title {
+  text-align: center;
+  line-height: auto;
+  font-size: 0.8em;
+}
+section .flink {
+  text-align: center;
+  position: relative;
+  z-index: 99999;
+  line-height: auto;
+  font-size: 0.3em;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-color: rgb(153, 204, 0,0.4);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+
+
+section .flink:hover {
+  background-color: rgb(153, 204, 0,0.4);
+}
+
+section .btnwrap {
+  display: flex;
+  justify-content: center;
+}
+
+section .slink {
+  text-align: center;
+  position: relative;
+  z-index: 99999;
+  line-height: auto;
+  font-size: 0.3em;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+section .slink:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section .timer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  font-size: 4em;
+  border: 2px solid #99cc00;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+section .timer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: 2;
+  border: 4px solid #333333;
+}
+section .fill {
+  content: "";
+  position: absolute;
+  background: #99cc00;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}

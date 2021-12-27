@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Session Timer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main ng-app="Session-Timer" ng-controller="MainCtrl">
+<div class="title-wrap"><h1>Welcome</h1>
+    <h2>Please set your session length and break length.</h2>
+</div>    
+  <header>
+    <div class="session">
+      <div class="breakCtrl">
+        <p>break length</p>
+        <button class="minus" ng-click="breakLengthChange(-1)">-</button><span class="time">{{ breakLength }}</span>
+        <button class="plus" ng-click="breakLengthChange(1)">+</button>
+      </div>
+      <div class="sessionCtrl">
+        <p>session length</p>
+        <button class="minus" ng-click="sessionLengthChange(-1)">-</button><span class="time">{{ sessionLength }}</span>
+        <button class="plus" ng-click="sessionLengthChange(1)">+</button>
+      </div>
+    </div>
+  </header>
+  <section ng-click="toggleTimer()">
+    <div class="timer">
+      <p class="title">{{ sessionName }}</p>
+      <p>{{ timeLeft }}</p><span class="fill" ng-style="{'height':fillHeight, 'background':fillColor }"></span>
+      <div class="btnwrap">
+          <div class="flink">Start</div>
+          <div class="slink">Stop</div>
+    </div>
+      
+    </div>
+  </section>
+</main>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
