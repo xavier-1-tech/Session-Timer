@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: img-session-timer 
+    build: .
+    container_name: session-timer 
+    restart: always
+    ports:
+      - "8081:80"
